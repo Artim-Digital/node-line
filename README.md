@@ -5,16 +5,16 @@
 
 NodeLine is a JavaScript library for creating dynamic connections between graphical elements.
 
-## Descrição
+## Description
 
 The NodeLine library offers a simple and flexible way to add connection functionalities between elements in JavaScript projects. With this library, you can create dynamic visual lines to connect different elements, enabling an interactive and intuitive experience for users.
 
-## Recursos
+## Resources
 
 - Rendering a line between selected elements.
 - Support for different types of elements such as text boxes, images, and custom shapes.
 
-## Instalação 
+## Installation 
 
 #### Manual installation. :
 
@@ -29,7 +29,7 @@ import { NodeLine } from "node-line.main.js";
 npm install node-line
 ```
 
-## Uso 
+## Use 
 
 When importing the library into your project, instantiate the NodeLine class, and you can assign each instance to a constant : 
 
@@ -58,7 +58,7 @@ If you are assigning NodeLine to an element with dynamic proportion or displacem
  myNode.updatePath();
 ```
 
-## Exemplo 
+## Example 
 
 Create an 'index.html' file and an 'index.js' file, and then include the 'index.js' file in your 'index.html' file.
 <br>
@@ -111,7 +111,7 @@ Read more about [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_shari
 - NodeLine and DotLine configurations
 - ~~Function to update NodeLine~~ ( Completed )
 
-## Contribuir 
+## Contribute 
 
 To contribute to the NodeLine project, you can clone the repository and create a pull request with your changes. You will be very welcome as a contributor to the project.
 
