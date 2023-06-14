@@ -16,17 +16,12 @@ The NodeLine library offers a simple and flexible way to add connection function
 
 ## Installation 
 
-#### Manual installation. :
+#### Import :
 
 Import the library into your project/file.js
 
 ```javascript 
 import { NodeLine } from "node-line.main.js";
-```
-#### Installation NPM. :
-
-```bash
-npm install node-line
 ```
 
 ## Use 
@@ -58,6 +53,31 @@ If you are assigning NodeLine to an element with dynamic proportion or displacem
  myNode.updatePath();
 ```
 
+Now it's possible to remove specific nodes by calling the 'removeNode()' function.
+
+ ```javascript
+ myNode.removeNode();
+```
+
+To customize your line or the starting and ending points of the line, you can call the 'settings()' function.
+
+ ```javascript
+ myNode.settings(line,dot);
+```
+
+| Element | key | Type | Description |
+|----------|----------|----------|----------|
+| line  | color  | string  | change the color of line  |
+| line  | scale  | string  | change the scale / width of line  |
+| dot  | color  | string  | change the fill color of dot  |
+| dot  | scale  | string  | change the scale of dot  |
+| dot | visible | boolean | change if the dot is visible
+
+'settings()' function example : 
+
+ ```javascript
+mynode.settings({color: "red", scale: "10"},{color: "green", scale: "5",visible: false})
+```
 ## Example 
 
 Create an 'index.html' file and an 'index.js' file, and then include the 'index.js' file in your 'index.html' file.
@@ -100,6 +120,8 @@ In your 'index.js' file, import the 'NodeLine' library, add your HTML elements, 
 
 In this example, we used <code>const body = document.body</code> to obtain a reference to the 'body' tag and add NodeLine to the body. However, you can use any other supported element as the container.
 
+![NodeLine Example](https://ik.imagekit.io/artim/artim-web/screely-1686743594181.png?updatedAt=1686743700281)
+
 It is possible that your browser, due to security reasons, may require you to be on a server. If this happens, you can use a local server for this purpose, such as [Xampp](https://www.apachefriends.org/pt_br/download.html)
  or if you are using Visual Studio Code, you can use the extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
@@ -108,8 +130,17 @@ Read more about [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_shari
 ## Roadmap 
 
 - Detach NodeLine from the element and reconnect it to another supported element
-- NodeLine and DotLine configurations
-- ~~Function to update NodeLine~~ ( Completed )
+- ~~NodeLine and DotLine configurations~~ ( done )
+- ~~Function to update line~~ ( done - 06/14/2023)
+- ~~Function to remove line~~ ( done - 06/14/2023)
+
+## Last update 
+
+<b>06/14/2023</b>
+
+## Version 
+
+1.2
 
 ## Contribute 
 
@@ -117,7 +148,7 @@ To contribute to the NodeLine project, you can clone the repository and create a
 
 <code>https://github.com/Artim-Digital/node-line.git</code>
 
-## Licença - MIT
+## License - MIT
 
 Copyright 2023 Artim Software and All Contributors.
 
@@ -128,6 +159,6 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
--- 
+#
 
-Development with ❤️ in Brazil.
+###### Artim Store & Tech. Ltda. Made with ❤️ in Brazil.
